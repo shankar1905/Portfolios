@@ -1,0 +1,17 @@
+.dashboard {
+    background-image: url("../../assets/img/Line_Bg@2x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #373434;
+    color: #fffefe;
+
+
+}
+
+.img {
+    width: 90%;
+    /* border: 20px double #3a3937; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 16px #3a3937;
+    padding: 2rem;
+}

@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Noto, sans-serif;
+}
+
+.pa-1 {
+    padding: 1rem !important;
+}
+
+.pa-2 {
+    padding: 2rem !important;
+}
+
+.pa-3 {
+    padding: 3rem !important;
+}
+
+.pt-d5 {
+    padding-top: .5rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-1d5 {
+    padding-top: 1.5rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-2d5 {
+    padding-top: 2.5rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px
+}
+
+.let-sp-1{
+    letter-spacing: 1px;
+}
+.let-sp-2{
+    letter-spacing: 2px;
+}
+.let-sp-3{
+    letter-spacing: 3px;
+}.let-sp-4{
+    letter-spacing: 5px;
+}
+.let-sp-5{
+    letter-spacing: 5px;
+}
+.let-sp-8{
+    letter-spacing: 8px;
+}
