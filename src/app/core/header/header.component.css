@@ -2,3 +2,31 @@ ul {
     list-style-type: none !important;
     text-align: center;
   }
+  .header{
+    background-color: #232222;
+    color: #fffefe !important;
+    position: fixed;
+  }
+  .nav-link{
+    position: absolute;
+     top: 14px;
+  }
+  .nav-link:hover{
+    border-bottom: 2px solid;
+    /* // width: 29px; */
+     position: absolute;
+     top: 14px;
+     color: #479c61;
+  }
+  .active{
+    color: #479c61;
+    border-bottom: 2px solid;
+    /* // width: 29px; */
+     position: absolute;
+     top: 14px;
+  }
+.logo{
+  width: 30px;
+  border-radius: 20px;
+}
+  

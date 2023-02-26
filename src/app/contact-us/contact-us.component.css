@@ -1,0 +1,28 @@
+.contact {
+    background-image: url("../../assets/img/black_world.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #050404;
+    color: #fffefe;
+    background-attachment: fixed;
+    background-blend-mode: difference;
+    animation: landing 1s;
+}
+
+
+@keyframes landing {
+    0% {
+        opacity: 0;
+        transform: scaleX(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1)
+    }
+}
+.hr-line {
+    margin: unset !important;
+    width: 100px;
+    border: 2px solid #479c61;
+}

@@ -1,1 +1,62 @@
-<p>contact-us works!</p>
+<div class="container-fluid contact pad-3">
+    <div class="row about-cont padt-2">
+        <div class="col-12 text-xs-center">
+            <div class="seeMore-btn text-center btn-style">
+                <div class="btn-styleLine double-line page-scroll">
+                    <div class="btn btn-lg btn-outline">
+                        <label class="about_txt">Contact </label>
+                        <span class="me_txt">Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row pad-2">
+        <div class="col-12 text-xs-center">
+            <h2>Get In Touch </h2>
+            <hr class="hr-line" />
+        </div>
+        <div class="col-6">
+
+        </div>
+
+        <div class="col-6" *ngIf="form_show ==0">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="frst_name" id="exampleFormControlInput1"
+                        placeholder="First Name">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="last_name" id="exampleFormControlInput1"
+                        placeholder="Last Name">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="phone" class="form-control" [(ngModel)]="email" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3 col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
+                    <input type="email" class="form-control" [(ngModel)]="phone" id="exampleFormControlInput1"
+                        placeholder="Mobile Number">
+                </div>
+
+                <div class="mb-3 col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripition</label>
+                    <textarea class="form-control" [(ngModel)]="desc" id="exampleFormControlTextarea1"
+                        rows="3"></textarea>
+                </div>
+                <div class="mb-3 col-12 text-xs-center">
+                    <button type="button" (click)="form_save()" class="btn btn-primary">{{submit_load}}</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

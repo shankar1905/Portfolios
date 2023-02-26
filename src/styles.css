@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
+
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  --black: #242424;
+  --white: #f5f5f5;
+  --pill: #e0d4be;
+  --red: #cc033f;
+}
 html,
 body {
     height: 100%;
@@ -9,42 +20,44 @@ body {
     font-family: Roboto, Noto, sans-serif;
 }
 
-.pa-1 {
+.pad-1 {
     padding: 1rem !important;
 }
 
-.pa-2 {
+.pad-2 {
     padding: 2rem !important;
 }
 
-.pa-3 {
+.pad-3 {
     padding: 3rem !important;
 }
 
-.pt-d5 {
+.padt-d5 {
     padding-top: .5rem;
 }
 
-.pt-1 {
+.padt-1 {
     padding-top: 1rem;
 }
 
-.pt-1d5 {
+.padt-1d5 {
     padding-top: 1.5rem;
 }
 
-.pt-2 {
+.padt-2 {
     padding-top: 2rem;
 }
 
-.pt-2d5 {
+.padt-2d5 {
     padding-top: 2.5rem;
 }
 
-.pt-3 {
+.padt-3 {
     padding-top: 3rem;
 }
-
+.padl-2{
+    padding-left: 2rem;
+}
 
 .fs-15 {
     font-size: 15px;
@@ -79,3 +92,93 @@ body {
 .let-sp-8{
     letter-spacing: 8px;
 }
+
+.cursor{
+    cursor: pointer !important;
+}
+
+.mar-t1{
+    margin-top: 1rem !important;
+}
+.mar-t2{
+    margin-top: 2rem !important;
+}
+.mar-t3{
+    margin-top: 3rem !important;
+}
+.mar-t1d5{
+    margin-top: 1.5rem !important;
+}
+.mar-t2d5{
+    margin-top: 2.5rem !important;
+}
+
+.text-xs-center{
+    text-align: center !important;
+}
+.text-xs-end{
+    text-align: end;
+}
+.text-xs-left{
+    text-align: left;
+}
+.text-xs-right{
+    text-align: right;
+}
+
+
+.about_txt {
+    text-transform: uppercase !important;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.me_txt {
+    margin-left: 1rem;
+    text-transform: uppercase !important;
+    color: #479c61;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
+.btn-style {
+    position: relative;
+    z-index: 1;
+}
+
+.double-line::before {
+    content: "";
+    border-top: 10px double #212121;
+    position: absolute;
+    top: 53%;
+    left: 22%;
+    width: 55%;
+    z-index: -1;
+}
+
+ 
+  .btn-outline {
+    margin-top: 15px;
+    /* border: solid 2px #212121; */
+    /* border-radius: 20px; */
+    font-size: 20px;
+    color: #fffefe;
+    background: #373434;
+    transition: all .3s ease-in-out;
+  }
+  .about-img{
+    width: 60%;
+    position: relative;
+  }
+  .about-img-outline{
+    border: 3px solid #fffefe;
+    width: 19%;
+    height: 45vh;
+    top: 44%;
+    position: fixed;
+    left: 10%;
+  }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +7,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  home = '';
+  about = '';
+  contact = '';
+  constructor(
+    public title :Title,
+  ) { }
 
   ngOnInit(): void {
+    
+    console.log(window.location.pathname)
+    var path = window.location.pathname;
+    if (path == '' || path == '/dashboard') {
+      
+      this.home = 'active'
+      this.title.setTitle('DilliBabu - Home')
+    } else {
+      this.home = ''
+    }
+    if (path == '' || path == '/about') {
+      this.about = 'active'
+      this.title.setTitle('DilliBabu - About')
+    } else {
+      this.about = ''
+    }
+    if (path == '' || path == '/contact_us') {
+      this.contact = 'active'
+      this.title.setTitle('DilliBabu - Contact')
+    } else {
+      this.contact = ''
+    }
+  }
+  changes(action: any) {
+    if (action == 'home') {
+      this.home = 'active'
+      this.title.setTitle('DilliBabu - Home')
+    } else {
+      this.home = ''
+    }
+    if (action == 'about') {
+      this.about = 'active'
+      this.title.setTitle('DilliBabu - About')
+    } else {
+      this.about = ''
+    }
+    if (action == 'contact') {
+      this.contact = 'active'
+      this.title.setTitle('DilliBabu - Contact')
+    } else {
+      this.contact = ''
+    }
+
   }
 
 }

@@ -1,20 +1,26 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="padding:unset !important;height: 10vh !important;" >
-  <div class="d-flex flex-row" style="color: rgb(244, 244, 244); width: 100%; ">
-   
-      <div class="col-2 ">
-        <label>logo</label>
+<div class="container-fluid header pad-1"  >
+  <div class="d-flex flex-row" >
+      <div class="col-xxl-2 col-xl-2  col-lg-2 col-md-2 col-sm-2 col-xs-12 col-12  ">
+        <span>
+          <img src="../../../assets/img/profile.jpg" class="logo" />
+        </span><label style="margin-left: 1rem;" >DILLI BABU E</label>
       </div>
-      <div class="col-4 ">
+      <div class="col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-4 col-xs-0 col-12 ">
       
       </div>
-      <div class="col-6  ">
+      <div class=" col-xxl-4 col-xl-4  col-lg-4 col-md-4 col-sm-4 col-xs-0 col-12  d-none d-sm-block">
         <ul class="d-flex flex-row" style="margin-bottom:unset !important;">
-          <li class="col-3 nav-link">Home</li>
-          <li class="col-3 nav-link">About Me</li>
-          <li class="col-3 nav-link">Learning & Projects</li>
-          <li class="col-3 nav-link">Contact Us</li>
+          <li (click)="changes('home')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "   [routerLink]="['/dashboard']">
+            <label class="nav-link {{home}} cursor">Home</label>
+          </li>
+          <li (click)="changes('about')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "  [routerLink]="['/about']">
+            <label class="nav-link {{about}} cursor">About Me</label></li>
+          <!-- <li class=" col-xxl-4 col-xl-4  col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12 "  [routerLink]="['/projects']">
+            <label class="nav-link cursor">Learning & Projects</label></li> -->
+          <li  (click)="changes('contact')" class=" col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12 "  [routerLink]="['/contact_us']">
+            <label class="nav-link {{contact}} cursor">Contact Us</label></li>
         </ul>
       </div>
    
   </div>
-</nav>
+</div>
