@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule , Title } from '@angular/platform-browser';
+import { BrowserModule , Title , Meta } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,7 @@ import { AppRoutes } from './app.routes';
     AppRoutingModule,
     RouterModule.forRoot(AppRoutes)
   ],
-  providers: [Title],
+  providers: [Title,Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

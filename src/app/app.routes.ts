@@ -7,6 +7,7 @@ export const AppRoutes: Routes = [{
     path: '',
     component: MainPanelComponent,
     children: [
+      
         {
             path: '',
             loadChildren: () =>
