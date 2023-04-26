@@ -40,19 +40,35 @@
     cursor: pointer;
 }
 
-.mat-t-3{
-    margin-top: 3rem ;
+.social-border {
+    border: 1px solid #c2efef;
+    padding: 1px 7px 1px 7px;
+    color: #5df3f2;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0px 7px 0px 7px;
+    cursor: pointer;
 }
 
-.mar-b-2{
-    margin-bottom: 1rem;
-}
-.km-fs:hover{
+.social-border:hover {
     background-color: #18bbba;
     color: #fffcfc;
 }
 
-.cv-fs:hover{
+.mat-t-3 {
+    margin-top: 3rem;
+}
+
+.mar-b-2 {
+    margin-bottom: 1rem;
+}
+
+.km-fs:hover {
+    background-color: #18bbba;
+    color: #fffcfc;
+}
+
+.cv-fs:hover {
     background-color: #18bbba;
     color: #fffcfc;
 }
