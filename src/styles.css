@@ -99,6 +99,9 @@ body {
 .cursor{
     cursor: pointer !important;
 }
+.mono-fs-s{
+    font-family: var(--bs-font-monospace);
+}
 
 .mar-t1{
     margin-top: 1rem !important;

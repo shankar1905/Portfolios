@@ -3,27 +3,28 @@ ul {
     text-align: center;
   }
   .header{
-    background-color: #232222;
-    color: #fffefe !important;
+    background-color: #fffefe;
+    color: #232222 !important;
     position: fixed;
+    box-shadow: 1px 1px 1px 1px #f0f2f4;
   }
   .nav-link{
     position: absolute;
      top: 14px;
   }
   .nav-link:hover{
-    border-bottom: 2px solid;
-    /* // width: 29px; */
+    /* border-bottom: 2px solid;
+    /* // width: 29px; 
      position: absolute;
-     top: 14px;
-     color: #479c61;
+     top: 14px; */
+     color: #5df3f2;
   }
   .active{
-    color: #479c61;
-    border-bottom: 2px solid;
+    color: #5df3f2;
+    /* border-bottom: 2px solid; */
     /* // width: 29px; */
-     position: absolute;
-     top: 14px;
+     /* position: absolute;
+     top: 14px; */
   }
 .logo{
   width: 30px;

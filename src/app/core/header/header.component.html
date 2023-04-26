@@ -3,7 +3,7 @@
       <div class="col-xxl-2 col-xl-2  col-lg-2 col-md-2 col-sm-2 col-xs-12 col-12  ">
         <span>
           <img src="../../../assets/img/profile.jpg" class="logo" />
-        </span><label style="margin-left: 1rem;" >DILLI BABU E</label>
+        </span><label style="margin-left: 1rem;" class="mono-fs-s"  >Dilli Babu</label>
       </div>
       <div class="col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-4 col-xs-0 col-12 ">
       
@@ -11,14 +11,14 @@
       <div class=" col-xxl-4 col-xl-4  col-lg-4 col-md-4 col-sm-4 col-xs-0 col-12  d-none d-sm-block">
         <ul class="d-flex flex-row" style="margin-bottom:unset !important;">
           <li (click)="changes('home')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "   [routerLink]="['/dashboard']">
-            <label class="nav-link {{home}} cursor">Home</label>
+            <label class="nav-link {{home}} cursor mono-fs-s">Home</label>
           </li>
           <li (click)="changes('about')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "  [routerLink]="['/about']">
-            <label class="nav-link {{about}} cursor">About Me</label></li>
-          <!-- <li class=" col-xxl-4 col-xl-4  col-lg-4 col-md-4 col-sm-4 col-xs-12 col-12 "  [routerLink]="['/projects']">
-            <label class="nav-link cursor">Learning & Projects</label></li> -->
-          <li  (click)="changes('contact')" class=" col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12 "  [routerLink]="['/contact_us']">
-            <label class="nav-link {{contact}} cursor">Contact Us</label></li>
+            <label class="nav-link {{about}} cursor mono-fs-s">About</label></li>
+            <li (click)="changes('about')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "  [routerLink]="['/about']">
+              <label class="nav-link {{about}} cursor mono-fs-s">Projects</label></li>
+          <li  (click)="changes('contact')" class=" col-xxl-3 col-xl-3  col-lg-3 col-md-3 col-sm-3 col-xs-12 col-12 "  [routerLink]="['/contact_us']">
+            <label class="nav-link {{contact}} cursor mono-fs-s">Contact</label></li>
         </ul>
       </div>
    

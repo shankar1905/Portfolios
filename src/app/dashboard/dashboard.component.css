@@ -26,6 +26,8 @@
     border-radius: 6px;
     margin-right: .5rem;
     cursor: pointer;
+    background-color: #fff;
+    color: #5df3f2;
 }
 
 .km-fs {
@@ -33,11 +35,26 @@
     border: 3px solid #c2efef;
     border-radius: 6px;
     cursor: pointer;
+    background-color: #fff;
+    color: #5df3f2;
+    cursor: pointer;
 }
 
+.mat-t-3{
+    margin-top: 3rem ;
+}
 
 .mar-b-2{
     margin-bottom: 1rem;
+}
+.km-fs:hover{
+    background-color: #18bbba;
+    color: #fffcfc;
+}
+
+.cv-fs:hover{
+    background-color: #18bbba;
+    color: #fffcfc;
 }
 
 .img {
