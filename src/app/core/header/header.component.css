@@ -6,6 +6,7 @@ ul {
     background-color: #fffefe;
     color: #232222 !important;
     position: fixed;
+    z-index: 999;
     box-shadow: 1px 1px 1px 1px #f0f2f4;
   }
   .nav-link{

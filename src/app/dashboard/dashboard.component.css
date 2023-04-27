@@ -13,7 +13,7 @@
 
 .name-fs {
     font-size: 80px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-weight: bold;
     letter-spacing: 3px;
 
@@ -106,10 +106,14 @@
     position: absolute;
     border-radius: 20px;
     right: 13%;
-    transform: rotate(126deg);
     top: 18%;
     box-shadow: #e4f5ed 0px 50px 100px -20px, #c5d1cb 0px 30px 60px -30px, #f7f9f8 0px -2px 6px 0px inset;
     background: #fff;
+    animation-name: backborder;
+    animation-delay: 1.2s;
+    animation-duration: 4s;
+    transform: rotate(126deg);
+    /* animation: backborder 1.5s; */
 }
 
 .txt-center {
@@ -139,10 +143,21 @@
 
 .dashboard .animation1 {
     animation: animation1 1.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .dashboard .animation2 {
     animation: animation2 1.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes backborder {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(126deg);
+    }
 }
 
 @keyframes animation1 {

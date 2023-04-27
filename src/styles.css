@@ -19,6 +19,10 @@ body {
     padding: 0;
     font-family: Roboto, Noto, sans-serif;
 }
+
+.norm-fs-fam{
+    font-family: "Poppins", sans-serif;
+}
 .primary-color{
     color: #18bbba !important;
 }
@@ -143,7 +147,7 @@ body {
 .me_txt {
     margin-left: 1rem;
     text-transform: uppercase !important;
-    color: #479c61;
+    color: #1e1e1e;
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
