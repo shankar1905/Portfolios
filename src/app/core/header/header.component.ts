@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   home = '';
   about = '';
   contact = '';
+  projects = '';
   constructor(
     public title :Title,
   ) { }
@@ -25,13 +26,19 @@ export class HeaderComponent implements OnInit {
     } else {
       this.home = ''
     }
-    if (path == '' || path == '/about') {
+    if ( path == '/about') {
       this.about = 'active'
       this.title.setTitle('DilliBabu - About')
     } else {
       this.about = ''
     }
-    if (path == '' || path == '/contact_us') {
+    if ( path == '/projects') {
+      this.projects = 'active'
+      this.title.setTitle('DilliBabu - projects')
+    } else {
+      this.projects = ''
+    }
+    if (path == '/contact_us') {
       this.contact = 'active'
       this.title.setTitle('DilliBabu - Contact')
     } else {
@@ -50,6 +57,12 @@ export class HeaderComponent implements OnInit {
       this.title.setTitle('DilliBabu - About')
     } else {
       this.about = ''
+    }
+    if (action == 'projects') {
+      this.projects = 'active'
+      this.title.setTitle('DilliBabu - projects')
+    } else {
+      this.projects = ''
     }
     if (action == 'contact') {
       this.contact = 'active'

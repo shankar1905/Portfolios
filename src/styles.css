@@ -26,6 +26,10 @@ body {
 .primary-color{
     color: #18bbba !important;
 }
+.btn-primary-bg{
+    background-color: #18bbba !important;
+    color: #fff;
+}
 
 .pad-1 {
     padding: 1rem !important;
@@ -69,6 +73,12 @@ body {
 .fs-15 {
     font-size: 15px;
 }
+.font-weight-bold{
+    font-weight: 600 ;
+}
+.fs-12 {
+    font-size: 12px;
+}
 
 .fs-13 {
     font-size: 13px;
@@ -110,7 +120,15 @@ body {
 .mar-r-5x {
     margin-right: 5px !important;
 }
-
+.mar-b-2{
+    margin-bottom: 1rem !important;
+}
+.mar-3{
+    margin: 1.5rem !important;
+}
+.mar-r-p5{
+    margin-right: .5rem !important;
+}
 .mar-t1{
     margin-top: 1rem !important;
 }
@@ -126,7 +144,12 @@ body {
 .mar-t2d5{
     margin-top: 2.5rem !important;
 }
-
+.mar-t3{
+    margin-top: 3rem !important;
+}
+.mar-l-2{
+    margin-left: 1rem !important;
+}
 .text-xs-center{
     text-align: center !important;
 }

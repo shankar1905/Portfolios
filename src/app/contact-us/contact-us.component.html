@@ -11,56 +11,88 @@
     <div class="row pad-2">
         <div class="col-6 pad-1 ">
             <div class="row contact-us ">
-                <div class="col-12">
+                <div class="col-12 set-1">
                     <span class="info-outline"><i class="fas fa-phone-alt icon-xs"></i></span>
                     <label class="mono-fs-s">+91 95007****6</label>
                 </div>
-                <div class="col-12">
+                <div class="col-12 set-1">
                     <span class="info-outline"><i class="far fa-envelope  icon-xs "></i></span>
                     <label class="mono-fs-s">dillibabuelumalai24@gmail.com</label>
                 </div>
-                <div class="col-12">
+                <div class="col-12 set-1">
                     <span class="info-outline"><i class="fas fa-map-marker-alt  icon-xs "></i></span>
                     <label class="mono-fs-s">Chennai , Tamil Nadu , India</label>
                 </div>
             </div>
         </div>
 
-        <div class="col-6" *ngIf="form_show ==0">
-            <div class="row">
-                <div class="mb-3 col-6">
-                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" [(ngModel)]="frst_name" id="exampleFormControlInput1"
-                        placeholder="First Name">
-                </div>
-                <div class="mb-3 col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" [(ngModel)]="last_name" id="exampleFormControlInput1"
-                        placeholder="Last Name">
-                </div>
-                <div class="mb-3 col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="phone" class="form-control" [(ngModel)]="email" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
-                </div>
-                <div class="mb-3 col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
-                    <input type="email" class="form-control" [(ngModel)]="phone" id="exampleFormControlInput1"
-                        placeholder="Mobile Number">
-                </div>
+        <div class="col-6 " *ngIf="form_show ==0">
+            <form [formGroup]="contactForm" novalidate class="sign-up-form"
+                (ngSubmit)="contact_save(contactForm.value)">
+                <div class="row">
 
-                <div class="mb-3 col-12">
-                    <label for="exampleFormControlTextarea1" class="form-label">Descripition</label>
-                    <textarea class="form-control" [(ngModel)]="desc" id="exampleFormControlTextarea1"
-                        rows="3"></textarea>
-                </div>
-                <div class="mb-3 col-12 text-xs-center">
-                    <!-- <button type="button" (click)="form_save()" class="btn btn-primary">{{submit_load}}</button> -->
-                    <div class="cv-fs">
-                        <label class="cursor">Send Message</label>
+                    <div class="mb-3 col-6 set-2">
+                        <div class="form-group">
+                            <label class="label_txt mono-fs-s">First Name</label>
+                            <input type="text" formControlName="first_name" class="form-control"
+                                [ngClass]="{ 'is-invalid': submitted && f['first_name'].errors }" />
+                            <div *ngIf="submitted && f['first_name'].errors" class="invalid-feedback">
+                                <div *ngIf="f['first_name'].errors['required']">First Name is required</div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="mb-3 col-6 set-2">
+                        <div class="form-group">
+                            <label class="label_txt  mono-fs-s">Last Name</label>
+                            <input type="text" formControlName="last_name" class="form-control"
+                                [ngClass]="{ 'is-invalid': submitted && f['last_name'].errors }" />
+                            <div *ngIf="submitted && f['last_name'].errors" class="invalid-feedback">
+                                <div *ngIf="f['last_name'].errors['required']">Last Name is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-6 set-2">
+                        <div class="form-group">
+                            <label class="label_txt  mono-fs-s">E-Mail ID</label>
+                            <input type="email" formControlName="email_id" class="form-control"
+                                [ngClass]="{ 'is-invalid': submitted && f['email_id'].errors }" />
+                            <div *ngIf="submitted && f['email_id'].errors" class="invalid-feedback">
+                                <div *ngIf="f['email_id'].errors['required']">Email is required</div>
+                                <div *ngIf="f['email_id'].errors['email_id']">Email is invalid</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-6 set-2">
+                        <div class="form-group">
+                            <label class="label_txt  mono-fs-s">Mobile Number</label>
+                            <input type="text" formControlName="phone_number" class="form-control"
+                                [ngClass]="{ 'is-invalid': submitted && f['phone_number'].errors }" />
+                            <div *ngIf="submitted && f['phone_number'].errors" class="invalid-feedback">
+                                <div *ngIf="f['phone_number'].errors['required']">Phone Number is required</div>
+                                <div *ngIf="f['phone_number'].errors['minlength']">
+                                    Phone Number must be at least 10 numbers
+                                </div>
+                                <div *ngIf="f['phone_number'].errors['maxlength']">
+                                    Phone Number must not exceed 15 numbers
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 set-2">
+                        <div class="form-group">
+                            <label class="label_txt  mono-fs-s">Descripition</label>
+                            <textarea class="form-control" formControlName="desc" id="exampleFormControlTextarea1"
+                                rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 text-xs-center set-2">
+                        <button type="submit" class="btn btn-primary-bg">Send Message</button>
+
+                    </div>
+
                 </div>
-            </div>
+            </form>
         </div>
 
 

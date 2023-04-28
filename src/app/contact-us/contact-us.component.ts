@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators, ReactiveFormsModule, FormGroup, FormControl, FormArray, AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -13,16 +14,37 @@ export class ContactUsComponent implements OnInit {
   desc = '';
   submit_load = "Submit"
   form_show = 0;
-  constructor() { }
+
+  submitted = false;
+
+  public contactForm: any;
+
+
+  constructor(
+    private formBuilder: FormBuilder,
+  ) { }
 
   ngOnInit(): void {
+
+    this.contactForm = this.formBuilder.group({
+      first_name: ['', Validators.required],
+      last_name: ['', Validators.required],
+      email_id: ['', [Validators.required, Validators.email]],
+      phone_number: ['', [Validators.required, Validators.minLength(10),
+      Validators.maxLength(15),]],
+      desc:[''],
+    },)
   }
-  form_save() {
-    this.submit_load = "Loading.."
-    if (this.frst_name != '' && this.last_name && this.email != '' && this.phone != '') {
-        this.form_show = 1
-    }else{
-      this.submit_load = "Submit"
+
+  get f(): { [key: string]: AbstractControl } {
+    return this.contactForm.controls;
+  }
+  contact_save(datas:any) {
+    this.submitted = true;
+
+    if (this.contactForm.valid) {
+    } else {
+      return;
     }
   }
 }
