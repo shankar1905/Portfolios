@@ -1,25 +1,29 @@
 <div class="container-fluid contact pad-3">
     <div class="row about-cont padt-2">
         <div class="col-12 text-xs-center">
-            <div class="seeMore-btn text-center btn-style">
-                <div class="btn-styleLine double-line page-scroll">
-                    <div class="btn btn-lg btn-outline">
-                        <label class="about_txt">Contact </label>
-                        <span class="me_txt">Us</span>
-                    </div>
-                </div>
-            </div>
+            <p class="mono-fs-s">Get In Touch</p>
+            <label class="about_txt primary-color">Contact </label>
+            <span class="me_txt">Us</span>
         </div>
 
     </div>
 
     <div class="row pad-2">
-        <div class="col-12 text-xs-center">
-            <h2>Get In Touch </h2>
-            <hr class="hr-line" />
-        </div>
-        <div class="col-6">
-
+        <div class="col-6 pad-1 ">
+            <div class="row contact-us ">
+                <div class="col-12">
+                    <span class="info-outline"><i class="fas fa-phone-alt icon-xs"></i></span>
+                    <label class="mono-fs-s">+91 95007****6</label>
+                </div>
+                <div class="col-12">
+                    <span class="info-outline"><i class="far fa-envelope  icon-xs "></i></span>
+                    <label class="mono-fs-s">dillibabuelumalai24@gmail.com</label>
+                </div>
+                <div class="col-12">
+                    <span class="info-outline"><i class="fas fa-map-marker-alt  icon-xs "></i></span>
+                    <label class="mono-fs-s">Chennai , Tamil Nadu , India</label>
+                </div>
+            </div>
         </div>
 
         <div class="col-6" *ngIf="form_show ==0">
@@ -51,10 +55,15 @@
                         rows="3"></textarea>
                 </div>
                 <div class="mb-3 col-12 text-xs-center">
-                    <button type="button" (click)="form_save()" class="btn btn-primary">{{submit_load}}</button>
+                    <!-- <button type="button" (click)="form_save()" class="btn btn-primary">{{submit_load}}</button> -->
+                    <div class="cv-fs">
+                        <label class="cursor">Send Message</label>
+                    </div>
                 </div>
             </div>
         </div>
+
+
 
     </div>
 

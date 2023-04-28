@@ -1,12 +1,28 @@
 .contact {
-    background-image: url("../../assets/img/black_world.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #050404;
-    color: #fffefe;
-    background-attachment: fixed;
-    background-blend-mode: difference;
-    animation: landing 1s;
+    background-color: #f1fbfc;
+    color: #373434;
+}
+
+.contact-us {
+    background-color: #fff;
+    color: #373434;
+    width: 100%;
+    height: 50vh;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    padding: 3rem;
+}
+
+.info-outline {
+    width: 2.5rem;
+    border: 1px solid aliceblue;
+    aspect-ratio: 2/2;
+    padding: 7px 10px 7px 10px;
+    border-radius: 50%;
+    background: #5df3f2;
+    color: #fff;
+    margin-right: 1.5rem;
 }
 
 
@@ -21,8 +37,29 @@
         transform: scaleX(1)
     }
 }
+
 .hr-line {
     margin: unset !important;
     width: 100px;
     border: 2px solid #479c61;
+}
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.cv-fs {
+    padding: 5px 10px 5px 10px;
+    border: 3px solid #c2efef;
+    border-radius: 6px;
+    margin-right: .5rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #5df3f2;
+}
+
+
+.cv-fs:hover {
+    background-color: #18bbba;
+    color: #fffcfc;
 }
