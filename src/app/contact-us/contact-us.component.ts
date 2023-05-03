@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule, FormGroup, FormControl, FormArray, AbstractControl } from '@angular/forms';
-
+import { DeviceDetectorService } from 'ngx-device-detector';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -14,6 +14,7 @@ export class ContactUsComponent implements OnInit {
   desc = '';
   submit_load = "Submit"
   form_show = 0;
+  public device:any;
 
   submitted = false;
 
@@ -21,11 +22,12 @@ export class ContactUsComponent implements OnInit {
 
 
   constructor(
+    public deviceService:DeviceDetectorService,
     private formBuilder: FormBuilder,
   ) { }
 
   ngOnInit(): void {
-
+    this.device = this.deviceService.isMobile();
     this.contactForm = this.formBuilder.group({
       first_name: ['', Validators.required],
       last_name: ['', Validators.required],

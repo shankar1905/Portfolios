@@ -199,3 +199,73 @@
         transform: scaleX(1)
     }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+   
+
+
+    .img-border-bg {
+        border: 6px solid #e5f5f5;
+        width: 22%;
+        text-align: center;
+        height: 73vh;
+        position: absolute;
+        border-radius: 20px;
+        right: 0% !important;
+        top: 18%;
+        box-shadow: #e4f5ed 0px 50px 100px -20px, #c5d1cb 0px 30px 60px -30px, #f7f9f8 0px -2px 6px 0px inset;
+        background: #fff;
+        animation-name: backborder;
+        animation-delay: 1.2s;
+        animation-duration: 4s;
+        transform: rotate(126deg);
+        /* animation: backborder 1.5s; */
+    }
+
+    .image-bg {
+        width: 100%;
+        height: 70vh;
+        filter: brightness(1) saturate(2);
+        border: 2px solid #cdeadd;
+        /* background: #d5f1e4; */
+        background: linear-gradient(146deg, rgba(213, 241, 228, 1) 0%, rgba(207, 245, 232, 1) 28%, rgba(226, 238, 204, 1) 100%);
+        border-radius: 5%;
+        box-shadow: #e4f5ed 0px 50px 100px -20px, #c5d1cb 0px 30px 60px -30px, #f7f9f8 0px -2px 6px 0px inset;
+    }
+    
+    .mob-pad-l-1{
+        padding-left:  1rem !important;
+    }
+    .mob-mt-1d5{
+        margin-top: 1.5rem !important;
+    }
+
+  }
+
+  .second {
+    width: 100%;
+    -webkit-animation: spark 1s 1.1s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
+    animation: spark 1s 1s cubic-bezier(0.76, 0.01, 0.21, 1.02) forwards;
+    -webkit-clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+@keyframes spark {
+    from {
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}

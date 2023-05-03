@@ -6,7 +6,7 @@ import { Title ,Meta } from '@angular/platform-browser';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  public hide ='hide';
   constructor(
     public titleservice:Title,
     public metaservice:Meta
@@ -27,6 +27,10 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    setTimeout(() => {
+      this.hide = 'show'
+    }, 2500);
   }
 
 }

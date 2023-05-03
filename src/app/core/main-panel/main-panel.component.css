@@ -1,0 +1,37 @@
+.nav-link {
+    padding: 1rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: #fff9f9;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-bottom: .5rem;
+}
+.logo {
+    width: 30px;
+    border-radius: 20px;
+  }
+.nav-link:hover {
+    /* border-bottom: 2px solid;
+      /* // width: 29px; 
+       position: absolute;
+       top: 14px; */
+    color: #5df3f2;
+}
+
+.nav-link {
+    color: #191b1b;
+}
+
+
+
+.active {
+    color: #5df3f2;
+    padding: 1rem;
+    border-left: 3px solid;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background: #fff9f9;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+}

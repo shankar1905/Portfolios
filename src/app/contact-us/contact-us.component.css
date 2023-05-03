@@ -25,6 +25,12 @@
     margin-right: 1.5rem;
 }
 
+.contact-info {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
 .set-1 {
     animation-name: delay1;
     animation-duration: 1.4s;

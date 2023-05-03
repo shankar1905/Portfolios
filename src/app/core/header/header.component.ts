@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,27 +13,31 @@ export class HeaderComponent implements OnInit {
   contact = '';
   projects = '';
   constructor(
-    public title :Title,
+    public title: Title,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
-    
+
     console.log(window.location.pathname)
     var path = window.location.pathname;
+    console.log(path)
+    if (path == '') {
+      this.router.navigate(["dashboard"]);
+    }
     if (path == '' || path == '/dashboard') {
-      
       this.home = 'active'
       this.title.setTitle('DilliBabu - Home')
     } else {
       this.home = ''
     }
-    if ( path == '/about') {
+    if (path == '/about') {
       this.about = 'active'
       this.title.setTitle('DilliBabu - About')
     } else {
       this.about = ''
     }
-    if ( path == '/projects') {
+    if (path == '/projects') {
       this.projects = 'active'
       this.title.setTitle('DilliBabu - projects')
     } else {

@@ -1,5 +1,5 @@
-<div class="container-fluid contact pad-3">
-    <div class="row about-cont padt-2">
+<div class="contact pad-3 mob-pad-1">
+    <div class="row about-cont padt-2 mob-pad-t-3">
         <div class="col-12 text-xs-center">
             <p class="mono-fs-s">Get In Touch</p>
             <label class="about_txt primary-color">Contact </label>
@@ -8,8 +8,9 @@
 
     </div>
 
-    <div class="row pad-2">
-        <div class="col-6 pad-1 ">
+    <div class="row pad-2 mob-pad-0">
+
+        <div class="col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12 pad-1 " *ngIf="!device">
             <div class="row contact-us ">
                 <div class="col-12 set-1">
                     <span class="info-outline"><i class="fas fa-phone-alt icon-xs"></i></span>
@@ -26,7 +27,7 @@
             </div>
         </div>
 
-        <div class="col-6 " *ngIf="form_show ==0">
+        <div class="col-xxl-6 col-xl-6  col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12 " *ngIf="form_show ==0">
             <form [formGroup]="contactForm" novalidate class="sign-up-form"
                 (ngSubmit)="contact_save(contactForm.value)">
                 <div class="row">
@@ -95,8 +96,20 @@
             </form>
         </div>
 
-
-
+        <div *ngIf="device" class="col-12 pad-2 contact-info">
+            <div class="col-12 set-1 mob-pad-bt-1d5">
+                <span class="info-outline"><i class="fas fa-phone-alt icon-xs"></i></span>
+                <label class="mono-fs-s">+91 95007****6</label>
+            </div>
+            <div class="col-12 set-1 mob-pad-bt-1d5">
+                <span class="info-outline"><i class="far fa-envelope  icon-xs "></i></span>
+                <label class="mono-fs-s">dillibabuelumalai24@gmail.com</label>
+            </div>
+            <div class="col-12 set-1 mob-pad-bt-1d5">
+                <span class="info-outline"><i class="fas fa-map-marker-alt  icon-xs "></i></span>
+                <label class="mono-fs-s">Chennai , Tamil Nadu , India</label>
+            </div>
+        </div>
     </div>
 
 

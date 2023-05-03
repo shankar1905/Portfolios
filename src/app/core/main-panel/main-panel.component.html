@@ -1,4 +1,28 @@
-
 <app-header></app-header>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+    aria-labelledby="offcanvasWithBackdropLabel" style="width: 75% !important;">
+    <div class="offcanvas-header">
+        <span  data-bs-dismiss="offcanvas" aria-label="Close" [routerLink]="['/dashboard']" class="cursor">
+            <img src="../../../assets/img/profile.jpg" class="logo" />
+          </span><label  data-bs-dismiss="offcanvas" aria-label="Close" [routerLink]="['/dashboard']"  style="margin-left: -4rem" class="mono-fs-s cursor"  >Dilli Babu</label>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="row">
+            <div class="col-12" data-bs-dismiss="offcanvas" aria-label="Close" (click)="changes('home')" [routerLink]="['/dashboard']">
+                <label class="nav-link {{home}} cursor mono-fs-s">Home</label>
+            </div>
+            <div class="col-12" data-bs-dismiss="offcanvas" aria-label="Close" (click)="changes('about')" [routerLink]="['/about']">
+                <label class="nav-link {{about}} cursor mono-fs-s">About</label>
+            </div>
+            <div class="col-12" data-bs-dismiss="offcanvas" aria-label="Close" (click)="changes('projects')" [routerLink]="['/projects']">
+                <label class="nav-link {{projects}} cursor mono-fs-s">Projects</label>
+            </div>
+            <div class="col-12" data-bs-dismiss="offcanvas" aria-label="Close" (click)="changes('contact')" [routerLink]="['/contact_us']">
+                <label class="nav-link {{contact}} cursor mono-fs-s">Contact</label>
+            </div>
+        </div>
+    </div>
+</div>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
