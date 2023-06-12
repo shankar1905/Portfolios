@@ -174,7 +174,7 @@ body {
 .me_txt {
     margin-left: 1rem;
     text-transform: uppercase !important;
-    color: #1e1e1e;
+    color: #fff;
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -232,7 +232,7 @@ body {
     .me_txt {
         margin-left: 1rem;
         text-transform: uppercase !important;
-        color: #1e1e1e;
+        color: #fff;
         font-size: 22px;
         letter-spacing: 2px;
         font-weight: bold;

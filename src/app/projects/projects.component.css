@@ -1,6 +1,6 @@
 .projects {
-    background-color: #f1fbfc;
-    color: #373434;
+    background: #010101;
+    color: #fff;
 }
 
 .project-cont {
@@ -14,8 +14,8 @@
 .sum-txt {
     font-size: 20px;
     font-weight: 600;
-    color: #7c8080;
-    border-bottom: 3px solid #2ea78a94;
+    color: #fff;
+    border-bottom: 3px solid #40f3c8de;
     width: 85px;
 
 }

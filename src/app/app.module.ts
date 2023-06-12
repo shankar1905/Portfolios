@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { MainPanelComponent } from './core/main-panel/main-panel.component';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { RouterModule } from '@angular/router';
 
 import { AppRoutes } from './app.routes';
