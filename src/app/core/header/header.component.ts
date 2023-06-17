@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
+import { NavigationEnd } from '@angular/router';
+
+import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,13 +22,20 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log(window.location.pathname)
-    var path = window.location.pathname;
-    console.log(path)
-    if (path == '') {
-      this.router.navigate(["dashboard"]);
-    }
-    if (path == '' || path == '/dashboard') {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: any) => {
+      if(event.url == ''){
+        
+      }
+      console.log(event)
+      this.route_change(event.url);
+    });
+
+  }
+
+  route_change(path:any){
+    if (path == '/dashboard') {
       this.home = 'active'
       this.title.setTitle('DilliBabu - Home')
     } else {
@@ -50,6 +60,7 @@ export class HeaderComponent implements OnInit {
       this.contact = ''
     }
   }
+
   changes(action: any) {
     if (action == 'home') {
       this.home = 'active'

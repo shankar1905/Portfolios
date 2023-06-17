@@ -1,7 +1,11 @@
-import { Component, OnInit,Inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Title } from '@angular/platform-browser';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+
+import { filter } from 'rxjs/operators';
+
 @Component({
   selector: 'app-main-panel',
   templateUrl: './main-panel.component.html',
@@ -12,20 +16,31 @@ export class MainPanelComponent implements OnInit {
   about = '';
   contact = '';
   projects = '';
- 
+
   constructor(@Inject(DOCUMENT) private document: any,
-  public title: Title,
-  private router: Router,) { }
+    public title: Title,
+    private router: Router,) {
+   
+  }
 
   ngOnInit(): void {
 
-    console.log(window.location.pathname)
-    var path = window.location.pathname;
-    console.log(path)
-    if (path == '') {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: any) => {
+      if(event.url == ''){
+       
+      }
+      this.router_track(event.url);
+    });
+
+  }
+
+  router_track(path:any) {
+    if (path == '/') {
       this.router.navigate(["dashboard"]);
     }
-    if (path == '' || path == '/dashboard') {
+    if ( path == '/dashboard') {
       this.home = 'active'
       this.title.setTitle('DilliBabu - Home')
     } else {
