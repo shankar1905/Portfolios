@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
+console.log( window.Location)
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: any) => {
@@ -37,25 +37,29 @@ export class HeaderComponent implements OnInit {
   route_change(path:any){
     if (path == '/dashboard') {
       this.home = 'active'
-      this.title.setTitle('DilliBabu - Home')
+      this.title.setTitle('DilliBabu - Home');
+      this.router.navigate(["dashboard"]);
     } else {
       this.home = ''
     }
     if (path == '/about') {
       this.about = 'active'
       this.title.setTitle('DilliBabu - About')
+      this.router.navigate(["about"]);
     } else {
       this.about = ''
     }
     if (path == '/projects') {
       this.projects = 'active'
-      this.title.setTitle('DilliBabu - projects')
+      this.title.setTitle('DilliBabu - projects');
+      this.router.navigate(["projects"]);
     } else {
       this.projects = ''
     }
     if (path == '/contact_us') {
       this.contact = 'active'
-      this.title.setTitle('DilliBabu - Contact')
+      this.title.setTitle('DilliBabu - Contact');
+      this.router.navigate(["contact_us"]);
     } else {
       this.contact = ''
     }

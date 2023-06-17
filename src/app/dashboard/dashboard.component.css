@@ -306,7 +306,7 @@
 .floating {
 
     animation-name: floating;
-    animation-duration: 2s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
