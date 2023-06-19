@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
 
 import {ProjectsRoutes} from "./projects.routes";
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import {ProjectsRoutes} from "./projects.routes";
   ],
   imports: [
     CommonModule,
+    NgxUsefulSwiperModule,
     RouterModule.forChild(ProjectsRoutes)
   ]
 })

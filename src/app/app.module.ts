@@ -7,7 +7,7 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { MainPanelComponent } from './core/main-panel/main-panel.component';
 import { RouterModule } from '@angular/router';
-
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { AppRoutes } from './app.routes';
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { AppRoutes } from './app.routes';
    
   ],
   imports: [
-    
+    NgxUsefulSwiperModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(AppRoutes)
