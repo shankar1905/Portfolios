@@ -36,7 +36,7 @@ config: SwiperOptions = {
       grabCursor: true,
       centeredSlides: true,
  
-      spaceBetween: 5,
+      spaceBetween: 20,
       coverflowEffect: {
         rotate: 0,
         stretch: 1,

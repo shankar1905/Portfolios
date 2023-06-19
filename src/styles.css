@@ -180,6 +180,10 @@ body {
     font-weight: bold;
 }
 
+.pad-t-3{
+    padding-top: 1.5rem !important;
+}
+
 
 
 .btn-style {
