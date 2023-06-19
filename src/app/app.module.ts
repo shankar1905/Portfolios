@@ -19,7 +19,7 @@ import { AppRoutes } from './app.routes';
   ],
   imports: [
     NgxUsefulSwiperModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     RouterModule.forRoot(AppRoutes)
   ],

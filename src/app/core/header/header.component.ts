@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
 import { NavigationEnd } from '@angular/router';
-
+import { DOCUMENT } from '@angular/common';
 import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-header',
@@ -18,17 +18,21 @@ export class HeaderComponent implements OnInit {
   constructor(
     public title: Title,
     private router: Router,
+    @Inject(DOCUMENT) private document: any,
   ) { }
 
   ngOnInit(): void {
-console.log( window.Location)
+    console.log(this.document.location.pathname)
+    if(this.document.location.pathname =='/'){
+      this.router.navigate(["dashboard"]);
+    }
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: any) => {
       if(event.url == ''){
         
       }
-      console.log(event)
+      console.log(this.document.location)
       this.route_change(event.url);
     });
 
