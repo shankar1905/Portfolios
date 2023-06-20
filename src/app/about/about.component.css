@@ -215,6 +215,51 @@
 
 @media only screen and (max-width: 600px) {
 
+    .mentor-profile {
+        height: 300px !important;
+        min-width: 300px !important;
+    }
+
+    .mentor-pic {
+        object-fit: cover;
+        object-position: top center;
+        z-index: 998;
+        align-self: center;
+        width: 280px !important;
+        height: 280px !important;
+        position: relative;
+        filter: brightness(1.1) saturate(2);
+    }
+
+    .mentor-pic-background-1 {
+        position: absolute;
+        border: 2px solid #18bbba;
+        z-index: 1;
+        height: 120px !important;
+        width: 120px !important;
+        left: -32px !important;
+        top: -10% !important;
+    }
+
+    .mentor-pic-background-2 {
+        position: absolute;
+        border: 1px solid #18bbba;
+        background-color: #18bbba;
+        height: 150px;
+        width: 150px;
+        z-index: 0;
+        height: 120px !important;
+        width: 120px !important;
+        left: 192px !important;
+        top: 63% !important;
+    }
+
+    .mentor-pic-group {
+        width: 300px !important;
+        height: 300px !important;
+        position: relative;
+    }
+
     .img {
         filter: brightness(1) saturate(1.8);
         width: 50%;
