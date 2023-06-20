@@ -32,8 +32,8 @@ export class HeaderComponent implements OnInit {
       if(event.url == ''){
         
       }
-      console.log(event.url)
-      this.route_change(event.url);
+      // console.log(event.url)
+      this.route_change(this.document.location.pathname);
     });
     this.route_change(this.document.location.pathname);
   }

@@ -7,11 +7,12 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-  --black: #242424;
-  --white: #f5f5f5;
-  --pill: #e0d4be;
-  --red: #cc033f;
+    --black: #242424;
+    --white: #f5f5f5;
+    --pill: #e0d4be;
+    --red: #cc033f;
 }
+
 html,
 body {
     height: 100%;
@@ -20,13 +21,15 @@ body {
     font-family: Roboto, Noto, sans-serif;
 }
 
-.norm-fs-fam{
+.norm-fs-fam {
     font-family: "Poppins", sans-serif;
 }
-.primary-color{
+
+.primary-color {
     color: #18bbba !important;
 }
-.btn-primary-bg{
+
+.btn-primary-bg {
     background-color: #18bbba !important;
     color: #fff;
 }
@@ -66,16 +69,19 @@ body {
 .padt-3 {
     padding-top: 3rem;
 }
-.padl-2{
+
+.padl-2 {
     padding-left: 2rem;
 }
 
 .fs-15 {
     font-size: 15px;
 }
-.font-weight-bold{
-    font-weight: 600 ;
+
+.font-weight-bold {
+    font-weight: 600;
 }
+
 .fs-12 {
     font-size: 12px;
 }
@@ -92,74 +98,95 @@ body {
     font-size: 24px
 }
 
-.let-sp-1{
+.let-sp-1 {
     letter-spacing: 1px;
 }
-.let-sp-2{
+
+.let-sp-2 {
     letter-spacing: 2px;
 }
-.let-sp-3{
+
+.let-sp-3 {
     letter-spacing: 3px;
-}.let-sp-4{
+}
+
+.let-sp-4 {
     letter-spacing: 5px;
 }
-.let-sp-5{
+
+.let-sp-5 {
     letter-spacing: 5px;
 }
-.let-sp-8{
+
+.let-sp-8 {
     letter-spacing: 8px;
 }
 
-.cursor{
+.cursor {
     cursor: pointer !important;
 }
-.mono-fs-s{
+
+.mono-fs-s {
     font-family: var(--bs-font-monospace);
 }
 
 .mar-r-5x {
     margin-right: 5px !important;
 }
-.mar-b-2{
+
+.mar-b-2 {
     margin-bottom: 1rem !important;
 }
-.mar-3{
+
+.mar-3 {
     margin: 1.5rem !important;
 }
-.mar-r-p5{
+
+.mar-r-p5 {
     margin-right: .5rem !important;
 }
-.mar-t1{
+
+.mar-t1 {
     margin-top: 1rem !important;
 }
-.mar-t2{
+
+.mar-t2 {
     margin-top: 2rem !important;
 }
-.mar-t3{
+
+.mar-t3 {
     margin-top: 3rem !important;
 }
-.mar-t1d5{
+
+.mar-t1d5 {
     margin-top: 1.5rem !important;
 }
-.mar-t2d5{
+
+.mar-t2d5 {
     margin-top: 2.5rem !important;
 }
-.mar-t3{
+
+.mar-t3 {
     margin-top: 3rem !important;
 }
-.mar-l-2{
+
+.mar-l-2 {
     margin-left: 1rem !important;
 }
-.text-xs-center{
+
+.text-xs-center {
     text-align: center !important;
 }
-.text-xs-end{
+
+.text-xs-end {
     text-align: end;
 }
-.text-xs-left{
+
+.text-xs-left {
     text-align: left;
 }
-.text-xs-right{
+
+.text-xs-right {
     text-align: right;
 }
 
@@ -180,7 +207,7 @@ body {
     font-weight: bold;
 }
 
-.pad-t-3{
+.pad-t-3 {
     padding-top: 1.5rem !important;
 }
 
@@ -201,8 +228,8 @@ body {
     z-index: -1;
 }
 
- 
-  .btn-outline {
+
+.btn-outline {
     margin-top: 15px;
     /* border: solid 2px #212121; */
     /* border-radius: 20px; */
@@ -210,21 +237,23 @@ body {
     color: #fffefe;
     background: #373434;
     transition: all .3s ease-in-out;
-  }
-  .about-img{
+}
+
+.about-img {
     width: 60%;
     position: relative;
-  }
-  .about-img-outline{
+}
+
+.about-img-outline {
     border: 3px solid #fffefe;
     width: 19%;
     height: 45vh;
     top: 44%;
     position: fixed;
     left: 10%;
-  }
+}
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
     .about_txt {
         text-transform: uppercase !important;
@@ -232,7 +261,7 @@ body {
         letter-spacing: 2px;
         font-weight: bold;
     }
-    
+
     .me_txt {
         margin-left: 1rem;
         text-transform: uppercase !important;
@@ -241,18 +270,23 @@ body {
         letter-spacing: 2px;
         font-weight: bold;
     }
-    .mob-txt-start{
+
+    .mob-txt-start {
         text-align: start !important;
     }
-    .mob-mar-1{
+
+    .mob-mar-1 {
         margin: .5rem !important;
     }
-    .mob-pad-1{
+
+    .mob-pad-1 {
         padding: 1rem !important;
     }
-    .mob-pad-0{
+
+    .mob-pad-0 {
         padding: 0% !important;
     }
+
     .contact-us {
         background-color: #fff;
         color: #373434;
@@ -263,21 +297,33 @@ body {
         border-top-right-radius: 15%;
         padding: 1rem !important;
     }
-    .mob-pad-t-3{
+
+    .mob-pad-t-3 {
         padding-top: 3rem !important;
     }
+
     .info-outline {
         width: 100% !important;
-        border: 1px solid aliceblue;
+        border: 1px solid transparent;
         aspect-ratio: 2/2;
         padding: 7px 10px 7px 10px;
         border-radius: 50%;
-        background: #5df3f2;
+        background: transparent;
         color: #fff;
         margin-right: .5rem !important;
     }
-    .mob-pad-bt-1d5{
+
+    .mob-pad-bt-1d5 {
         padding-bottom: 1.5rem !important;
     }
-    
-  }
+
+}
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.8 !important;
+}
+.swiper-pagination-bullet-active{
+    background: #93f6f7 !important;
+    opacity: 0.8 !important;
+}

@@ -24,43 +24,48 @@ export class MainPanelComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    console.log(this.document.location.pathname)
+    if(this.document.location.pathname =='/'){
+      this.router.navigate(["dashboard"]);
+    }
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: any) => {
       if(event.url == ''){
-       
+        
       }
-      this.router_track(event.url);
+      // console.log(event.url)
+      this.route_change(this.document.location.pathname);
     });
-
+    this.route_change(this.document.location.pathname);
   }
 
-  router_track(path:any) {
-    if (path == '/') {
-      this.router.navigate(["dashboard"]);
-    }
-    if ( path == '/dashboard') {
+  route_change(path:any){
+    if (path == '/dashboard') {
       this.home = 'active'
-      this.title.setTitle('DilliBabu - Home')
+      this.title.setTitle('DilliBabu - Home');
+      this.router.navigate(["dashboard"]);
     } else {
       this.home = ''
     }
     if (path == '/about') {
       this.about = 'active'
       this.title.setTitle('DilliBabu - About')
+      this.router.navigate(["about"]);
     } else {
       this.about = ''
     }
     if (path == '/projects') {
       this.projects = 'active'
-      this.title.setTitle('DilliBabu - projects')
+      this.title.setTitle('DilliBabu - projects');
+      this.router.navigate(["projects"]);
     } else {
       this.projects = ''
     }
     if (path == '/contact_us') {
       this.contact = 'active'
-      this.title.setTitle('DilliBabu - Contact')
+      this.title.setTitle('DilliBabu - Contact');
+      this.router.navigate(["contact_us"]);
     } else {
       this.contact = ''
     }
