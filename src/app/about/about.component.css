@@ -233,12 +233,13 @@
 
     .mentor-pic-background-1 {
         position: absolute;
-        border: 2px solid #18bbba;
+        border: 2px dashed #18bbba;
         z-index: 1;
         height: 120px !important;
         width: 120px !important;
         left: -32px !important;
         top: -10% !important;
+        filter: blur(1px) !important;
     }
 
     .mentor-pic-background-2 {
@@ -252,6 +253,7 @@
         width: 120px !important;
         left: 192px !important;
         top: 63% !important;
+        filter: blur(5px);
     }
 
     .mentor-pic-group {
@@ -317,12 +319,13 @@
 
 .mentor-pic-background-1 {
     position: absolute;
-    border: 2px solid #18bbba;
+    border: 2px dashed #18bbba;
     z-index: 1;
     height: 150px;
     width: 150px;
     left: -39px;
     top: -9%;
+    filter: blur(1px) ;
 }
 
 .mentor-pic-background-2 {
@@ -336,4 +339,5 @@
     width: 150px;
     left: 250px;
     top: 65%;
+    filter: blur(5px);
 }

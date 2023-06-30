@@ -11,6 +11,11 @@ export class DashboardComponent implements OnInit {
     public titleservice:Title,
     public metaservice:Meta
   ) { 
+   
+  }
+
+  ngOnInit(): void {
+    
     this.metaservice.updateTag(
       { name:'description', content:'Home Page of my Portfolio'},
     
@@ -19,14 +24,8 @@ export class DashboardComponent implements OnInit {
       { name:'author', content:'Dilli Babu'},
     
     );
-    this.metaservice.updateTag(
-      { name:'keywords', content:'Dillibabu portfolio , dilli babu selfmade'},
     
-    );
     this.titleservice.setTitle('DilliBabu - Home')
-  }
-
-  ngOnInit(): void {
 
     setTimeout(() => {
       this.hide = 'show'

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule, FormGroup, FormControl, FormArray, AbstractControl } from '@angular/forms';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { Title ,Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -24,9 +25,23 @@ export class ContactUsComponent implements OnInit {
   constructor(
     public deviceService:DeviceDetectorService,
     private formBuilder: FormBuilder,
+    public titleservice:Title,
+    public metaservice:Meta
   ) { }
 
   ngOnInit(): void {
+
+    this.metaservice.updateTag(
+      { name:'description', content:'Contact Us'},
+    
+    );
+    // this.metaservice.updateTag(
+    //   { name:'author', content:'Dilli Babu'},
+    
+    // );
+    
+    this.titleservice.setTitle('DilliBabu - Contact Us')
+
     this.device = this.deviceService.isMobile();
     this.contactForm = this.formBuilder.group({
       first_name: ['', Validators.required],

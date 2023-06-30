@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import Swiper, { SwiperOptions } from 'swiper';
+import { Title ,Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -66,12 +67,26 @@ config: SwiperOptions = {
 };  
 
   constructor(
-    public deviceService:DeviceDetectorService
+    public deviceService:DeviceDetectorService,
+    public titleservice:Title,
+    public metaservice:Meta
   ) { 
   
   }
 
   ngOnInit(): void {
+
+    this.metaservice.updateTag(
+      { name:'description', content:'My Projects And Experience'},
+    
+    );
+    // this.metaservice.updateTag(
+    //   { name:'author', content:'Dilli Babu'},
+    
+    // );
+    
+    this.titleservice.setTitle('DilliBabu - Projects')
+
     this.device = this.deviceService.isMobile();
     console.log(this.device)
 
