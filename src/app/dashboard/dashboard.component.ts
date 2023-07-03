@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
     
     );
     
-    this.titleservice.setTitle('DilliBabu - Home')
+    this.titleservice.setTitle('DilliBabu - Portfolio')
 
     setTimeout(() => {
       this.hide = 'show'

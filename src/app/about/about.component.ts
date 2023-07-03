@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
     
     // );
     
-    this.titleservice.setTitle('DilliBabu - Home')
+    this.titleservice.setTitle('DilliBabu - About')
   }
 
 }
