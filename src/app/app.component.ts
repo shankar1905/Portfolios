@@ -12,10 +12,10 @@ export class AppComponent implements OnInit {
     this.metaTagService.addTags([
       {
         name: 'keywords',
-        content: 'Dillibabu portfolio , dilli babu selfmade,Dillibabu E, DILLIBABU ELUMALAI',
+        content: 'Shankar Ganesh portfolio , Shankar Ganesh selfmade,Shankar Ganesh E, Shankar Ganesh ELUMALAI',
       },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'Dilli Babu' },
+      { name: 'author', content: 'Shankar Ganesh' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'date', content: '2019-10-31', scheme: 'YYYY-MM-DD' },
       { charset: 'UTF-8' },

@@ -41,28 +41,28 @@ export class HeaderComponent implements OnInit {
   route_change(path:any){
     if (path == '/dashboard') {
       this.home = 'active'
-      this.title.setTitle('DilliBabu - Home');
+      this.title.setTitle('Shankar Ganesh - Home');
       this.router.navigate(["dashboard"]);
     } else {
       this.home = ''
     }
     if (path == '/about') {
       this.about = 'active'
-      this.title.setTitle('DilliBabu - About')
+      this.title.setTitle('Shankar Ganesh - About')
       this.router.navigate(["about"]);
     } else {
       this.about = ''
     }
     if (path == '/projects') {
       this.projects = 'active'
-      this.title.setTitle('DilliBabu - projects');
+      this.title.setTitle('Shankar Ganesh - projects');
       this.router.navigate(["projects"]);
     } else {
       this.projects = ''
     }
     if (path == '/contact_us') {
       this.contact = 'active'
-      this.title.setTitle('DilliBabu - Contact');
+      this.title.setTitle('Shankar Ganesh - Contact');
       this.router.navigate(["contact_us"]);
     } else {
       this.contact = ''
@@ -72,25 +72,25 @@ export class HeaderComponent implements OnInit {
   changes(action: any) {
     if (action == 'home') {
       this.home = 'active'
-      this.title.setTitle('DilliBabu - Home')
+      this.title.setTitle('Shankar Ganesh - Home')
     } else {
       this.home = ''
     }
     if (action == 'about') {
       this.about = 'active'
-      this.title.setTitle('DilliBabu - About')
+      this.title.setTitle('Shankar Ganesh - About')
     } else {
       this.about = ''
     }
     if (action == 'projects') {
       this.projects = 'active'
-      this.title.setTitle('DilliBabu - projects')
+      this.title.setTitle('Shankar Ganesh - projects')
     } else {
       this.projects = ''
     }
     if (action == 'contact') {
       this.contact = 'active'
-      this.title.setTitle('DilliBabu - Contact')
+      this.title.setTitle('Shankar Ganesh - Contact')
     } else {
       this.contact = ''
     }

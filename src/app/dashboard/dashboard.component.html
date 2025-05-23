@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="txt-center ">
-                <img src="../../assets/img/removebg-preview.png" class="image-bg" />
+                <img src="../../assets/img/Dashboard.png" class="image-bg" />
             </div>
             <!-- <div class="dot-img">
 
@@ -26,22 +26,24 @@
             </div>
             <div class="pad-lf-3 mob-pad-l-1 ">
                 <label class="norm-fs-fam">Hy I'm ...</label>
-                <h2 class="name-fs txt_bg norm-fs-fam second">Dilli Babu</h2>
+                <h2 class="name-fs txt_bg norm-fs-fam second">Shankar Ganesh</h2>
                 <pre class="typing-demo">I'm Developer ...</pre>
-                <p class="let-sp-1 padt-1 norm-fs-fam">Enthusiastic full stack developer with 2 years of front-end
-                    experience & 1
-                    years of Back-end experience in responsive web design for e-commerce platforms.
-
-                    Proven ability to build interactive and user-friendly web designs to scale.</p>
+                <p class="let-sp-1 padt-1 norm-fs-fam">Enthusiastic full stack developer with 3 years of front-end
+                    experience Proven ability to build interactive and user-friendly web designs to scale.</p>
 
                 <!-- <button type="button" class="btn btn-outline-success">Success</button> -->
             </div>
             <div class="d-flex pad-left-3 mar-b-2 mat-t-3">
+                <!-- Upload CV -->
                 <div class="cv-fs">
-                    <label class="cursor">Download Cv</label>
+                    <label class="cursor" (click)="downloadCV()">Download CV</label>
+                    <!-- Hidden anchor for triggering download -->
+                    <a #cvLink href="../../assets/img/Shankar Ganesh Resume.pdf" download style="display: none"></a>
                 </div>
-                <div [routerLink]="['/about']" class="km-fs">
-                    <label [routerLink]="['/about']" class="cursor">Know More</label>
+
+                <!-- Angular Router Navigation -->
+                <div class="km-fs">
+                    <label class="cursor" (click)="goToAbout()">Know More</label>
                 </div>
             </div>
             <div class="d-flex pad-left-3 mar-b-2 mat-t-3">
@@ -49,16 +51,28 @@
                     <label class="mono-fs-s">Follow Me</label>
                 </div>
                 <div class="social-border">
-                    <label class="mono-fs-s cursor"><i class="fab fa-facebook-f icon-xs"></i></label>
+                    <a href="https://www.facebook.com/share/15dheS6TBx/" target="_blank" rel="noopener noreferrer">
+                        <label class="mono-fs-s cursor"><i class="fab fa-facebook-f icon-xs"
+                                style="color: #5df3f2;"></i></label>
+                    </a>
                 </div>
-                <div class="social-border">
+                <!-- <div class="social-border">
                     <label class="mono-fs-s cursor"><i class="fab fa-twitter  icon-xs"></i></label>
+                </div> -->
+                <div class="social-border">
+                    <a href="https://www.instagram.com/shan__kar.__?igsh=OGtpbHl1NWFoMGp1" target="_blank"
+                        rel="noopener noreferrer">
+                        <label class="mono-fs-s cursor"><i class="fab fa-instagram  icon-xs"
+                                style="color: #5df3f2;"></i></label>
+                    </a>
                 </div>
                 <div class="social-border">
-                    <label class="mono-fs-s cursor"><i class="fab fa-instagram  icon-xs"></i></label>
-                </div>
-                <div class="social-border">
-                    <label class="mono-fs-s cursor"><i class="fab fa-linkedin-in  icon-xs"></i></label>
+                    <a href="https://www.linkedin.com/in/shankar-ganesh-72189a218/" target="_blank"
+                        rel="noopener noreferrer">
+                        <label class="mono-fs-s cursor">
+                            <i class="fab fa-linkedin-in icon-xs" style="color: #5df3f2;"></i>
+                        </label>
+                    </a>
                 </div>
             </div>
 
@@ -68,7 +82,7 @@
 
             <div class="hero-background">
                 <div class="hero-image">
-                    <img src="../../assets/img/removebg-preview.png" alt="Hero Image" class="hero-pic">
+                    <img src="../../assets/img/Dashboard.png" alt="Hero Image" class="hero-pic">
                 </div>
                 <div class="extra-icons">
                     <div class="extra-icons-wrapper h-100">

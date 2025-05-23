@@ -81,11 +81,11 @@ config: SwiperOptions = {
     
     );
     // this.metaservice.updateTag(
-    //   { name:'author', content:'Dilli Babu'},
+    //   { name:'author', content:'Shankar Ganesh'},
     
     // );
     
-    this.titleservice.setTitle('DilliBabu - Projects')
+    this.titleservice.setTitle('Shankar Ganesh - Projects')
 
     this.device = this.deviceService.isMobile();
     console.log(this.device)

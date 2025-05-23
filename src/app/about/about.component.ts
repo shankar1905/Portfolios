@@ -18,11 +18,11 @@ export class AboutComponent implements OnInit {
     
     );
     // this.metaservice.updateTag(
-    //   { name:'author', content:'Dilli Babu'},
+    //   { name:'author', content:'Shankar Ganesh'},
     
     // );
     
-    this.titleservice.setTitle('DilliBabu - About')
+    this.titleservice.setTitle('Shankar Ganesh - About')
   }
 
 }

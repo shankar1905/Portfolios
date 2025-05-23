@@ -36,11 +36,11 @@ export class ContactUsComponent implements OnInit {
     
     );
     // this.metaservice.updateTag(
-    //   { name:'author', content:'Dilli Babu'},
+    //   { name:'author', content:'Shankar Ganesh'},
     
     // );
     
-    this.titleservice.setTitle('DilliBabu - Contact Us')
+    this.titleservice.setTitle('Shankar Ganesh - Contact Us')
 
     this.device = this.deviceService.isMobile();
     this.contactForm = this.formBuilder.group({
