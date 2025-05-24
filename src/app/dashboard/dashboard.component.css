@@ -90,7 +90,7 @@ padding-left: 3rem ;
 .image-bg {
     width: 65%;
     /* height: 70vh; */
-    filter: brightness(1.1) saturate(2);
+    /* filter: brightness(1.1) saturate(2); */
     border: 1px solid transparent;
     /* background: #d5f1e4; */
     background: linear-gradient(to right top, #2E4295, #F9BA94);
@@ -232,7 +232,7 @@ padding-left: 3rem ;
     .image-bg {
         width: 280px;
         height: 35vh;
-        filter: brightness(1.1) saturate(2);
+        /* filter: brightness(1.1) saturate(2); */
         border: 1px solid transparent;
         /* background: #d5f1e4; */
         background: linear-gradient(to right top, #2E4295, #F9BA94);
